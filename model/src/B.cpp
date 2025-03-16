@@ -1,12 +1,11 @@
 #include <B.h>
 #include <iostream>
 
-/*
-void B::f()
-{
-        std::cout << "call derived function." << std::endl;
-}
-*/
+// I want to make this work!
+//void B::f()
+//{
+//        std::cout << "call derived function." << std::endl;
+//}
 
 void B::f_alternative()
 {

@@ -3,6 +3,20 @@
 #include <A.h>
 #include <B.h>
 
+void call_f(std::shared_ptr<A> myA)
+{
+    myA->f();
+}
+
+
+int main()
+{
+    std::shared_ptr<B> my_B_ptr = std::make_shared<B>();
+
+    call_f(my_B_ptr);
+    return 0;
+}
+
 /*
 class A
 {
@@ -24,17 +38,3 @@ class B : public A
     }
 };
 */
-
-void call_f(std::shared_ptr<A> myA)
-{
-    myA->f();
-}
-
-
-int main()
-{
-    std::shared_ptr<B> my_B_ptr = std::make_shared<B>();
-
-    call_f(my_B_ptr);
-    return 0;
-}
